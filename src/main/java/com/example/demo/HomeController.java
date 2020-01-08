@@ -49,7 +49,7 @@ public class HomeController {
     @RequestMapping("/update/{id}")
     public String updateCourse(@PathVariable("id") long id,
        Model model){
-         model.addAttribute("Course", courseRepository.findById(id).get());
+         model.addAttribute("course", courseRepository.findById(id).get());
          return "courseform";
     }
 
